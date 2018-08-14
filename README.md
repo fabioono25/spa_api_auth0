@@ -8,11 +8,12 @@ There are three steps to configure this solution:
 
 In your Auth0 Dashboard, you'll create a new API:
 
-[](https://github.com/fabioono25/spa_api_auth0/blob/master/images/API.PNG)
-[](https://github.com/fabioono25/spa_api_auth0/blob/master/images/api2.PNG)
-[](https://github.com/fabioono25/spa_api_auth0/blob/master/images/api_scopes.PNG)
-[](https://github.com/fabioono25/spa_api_auth0/blob/master/images/rules.PNG)
-[](https://github.com/fabioono25/spa_api_auth0/blob/master/images/token.PNG)
+
+![](https://github.com/fabioono25/spa_api_auth0/blob/master/images/API.PNG)
+![](https://github.com/fabioono25/spa_api_auth0/blob/master/images/api2.PNG)
+![](https://github.com/fabioono25/spa_api_auth0/blob/master/images/api_scopes.PNG)
+![](https://github.com/fabioono25/spa_api_auth0/blob/master/images/rules.PNG)
+![](https://github.com/fabioono25/spa_api_auth0/blob/master/images/token.PNG)
 
 
 Inside the API configuration, there's a Token Expiration, where you can configure the expiration of your token, as the expiration for browser flows.
