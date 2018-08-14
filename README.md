@@ -6,8 +6,11 @@ There are three steps to configure this solution:
 
 ### STEP 1: Auth0 Configuration
 
-In your Auth0 Dashboard, you'll create a new API:
+```sh
+Remember: if you want only to execute this code, feel free... these steps bellow are for you configurate from scratch your account, API, Rules.
+```
 
+In your Auth0 Dashboard, you'll create a new API:
 
 ![](https://github.com/fabioono25/spa_api_auth0/blob/master/images/API.PNG)
 ![](https://github.com/fabioono25/spa_api_auth0/blob/master/images/api2.PNG)
@@ -26,4 +29,27 @@ Users
 
 ### STEP 2: API Configuration
 
+For the API configuration, we can use de quickstart basic code that API will provide for you... there're some important configurations, like Uri, audience and issuer:
+
+![](https://github.com/fabioono25/spa_api_auth0/blob/master/images/configure_api.PNG)
+
+```sh
+As the previous item, you only need to download this code, inside API folder, and run with the commands:
+
+node index or
+
+nodemon index
+
+as you wish ;p
+```
+
+This is an example of API with no authentication and authorization rules
+![](https://github.com/fabioono25/spa_api_auth0/blob/master/images/postman1.PNG)
+
+In this example below, we are using token authentication (provided in previos step). The token here is expired, so you'll need to generate again clicking in the Test of the Customer API:
+
+![](https://github.com/fabioono25/spa_api_auth0/blob/master/images/postman2.PNG)
+
 ### STEP 3: SPA Configuration
+
+For SPA 
