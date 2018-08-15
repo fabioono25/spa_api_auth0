@@ -1,6 +1,6 @@
 # SPA + API + Auth0
 
-The objective is provide an example about how to use a solution provided by a SPA Page (constructed with AngularJS) + REST API (using Node.js). For the entire process of authentication and authorization, we'll use [Auth0](https://auth0.com), that provides these features as services. The origem of data isn't the fundamental thing here, so we focused in authentication, authorization and features related to controlling of rules.
+The objective is provide an example about how to use a solution provided by a SPA Page (constructed with AngularJS) + REST API (using Node.js). For the entire process of authentication and authorization, we'll use [Auth0](https://auth0.com), that provides these features as services. The origem of data isn't the fundamental thing here (I'm using a simple json), so we focused in authentication, authorization and features related to controlling of rules.
 
 You can see in action here: https://youtu.be/RZxmlw1Bb2E
 
