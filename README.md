@@ -50,7 +50,7 @@ Defining the rules inside API:
 Token expired:
 ![](https://github.com/fabioono25/spa_api_auth0/blob/master/images/postman2.PNG)
 
-Return ok (token valid):
+Return ok (token valid) with read:hot-customers scope:
 ![](https://github.com/fabioono25/spa_api_auth0/blob/master/images/postman3.PNG)
 
 
