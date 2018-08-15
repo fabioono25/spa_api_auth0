@@ -11,22 +11,31 @@
     const vm = this
     vm.auth = authService
     vm.customer = customerService
-    vm.customers = []
+    vm.customers = {}
+    vm.showBlockedWarning = false
 
     vm.getBasicCustomers = function() {
       const customers = vm.customer.getBasicCustomers()
+      vm.clearFields()
 
-      customers.then(function (data){
-        vm.customers = data
+      customers.then(function (response){
+        vm.showBlockedWarning = response.status === 401
+        vm.customers.data = response.data
       })
     }
     
     vm.getHotCustomers = function() {
       const customers = vm.customer.getHotCustomers()
+      vm.clearFields()
 
-      customers.then(function (data){
-        vm.customers = data
+      customers.then(function (response){
+        vm.showBlockedWarning = response.status === 401
+        vm.customers.data = response.data
       })
-    }    
+    }
+
+    vm.clearFields = function(){
+      vm.customers = {}
+    }
   }
 })()
