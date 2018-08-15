@@ -39,20 +39,44 @@ app.get('/authorized', (req, res) => {
 
 //get the normal customers (rule used for all users)
 app.get('/customers', jwtCheck, jwtAuthz(['read:customers']), (req, res) => {
-    fs.readFile('customers.json', 'utf8', function (err, data) {
-        if (err) throw err; // we'll not consider error handling for now
-        const obj = JSON.parse(data);
-        obj.customers.filter(e => e.status !== 'hot')
-    });
+
+     //Read JSON from relative path of this file
+     fs.readFile('customers.json' , 'utf8', (err, data) => {
+         //Handle Error
+        if(!err) {
+          //Handle Success
+           console.log("Success"+data);
+          // Parse Data to JSON and Filter different from hot
+           var jsonObj = JSON.parse(data)
+           const ret = jsonObj.customers.filter(e => e.status !== 'hot')
+          //Send back as Response
+           res.end(JSON.stringify(ret))
+         }else {
+            //Handle Error
+            res.end("Error: "+err )
+         }
+    })    
 })
 
 //get the hot customers (rule used for one specific user)
 app.get('/hotcustomers', jwtCheck, jwtAuthz(['read:hot-customers']), (req, res) => {
-    fs.readFile('customers.json', 'utf8', function (err, data) {
-        if (err) throw err; // we'll not consider error handling for now
-        const obj = JSON.parse(data);
-        obj.customers.filter(e => e.status === 'hot')
-    });
+    
+     //Read JSON from relative path of this file
+     fs.readFile('customers.json' , 'utf8', (err, data) => {
+        //Handle Error
+       if(!err) {
+         //Handle Success
+          console.log("Success"+data)
+         // Parse Data to JSON and Filter equals hot
+          var jsonObj = JSON.parse(data)
+          const ret = jsonObj.customers.filter(e => e.status === 'hot')
+         //Send back as Response
+          res.end(JSON.stringify(ret))
+        }else {
+           //Handle Error
+           res.end("Error: "+err )
+        }
+   })
 })
 
 app.listen(port)
