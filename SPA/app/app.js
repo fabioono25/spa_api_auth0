@@ -27,18 +27,6 @@
         templateUrl: 'app/home/home.html',
         controllerAs: 'vm'
       })
-      .state('customer', {
-        url: '/customer',
-        controller: 'CustomerController',
-        templateUrl: 'app/customer/customer.html',
-        controllerAs: 'vm'
-      })      
-      .state('customerhot', {
-        url: '/customerhot',
-        controller: 'CustomerHotController',
-        templateUrl: 'app/customerhot/customerhot.html',
-        controllerAs: 'vm'
-      })            
       .state('callback', {
         url: '/callback',
         controller: 'CallbackController',
