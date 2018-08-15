@@ -37,5 +37,10 @@ access: only for basic customers
 ### Auth0 Configuration
 
 
+### Walking Through the Pages
+
+https://youtu.be/RZxmlw1Bb2E
+
+
 
 
