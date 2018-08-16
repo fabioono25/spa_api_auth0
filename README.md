@@ -6,9 +6,11 @@ You can see in action here: https://youtu.be/RZxmlw1Bb2E
 
 After cloning the solution, run these steps:
 
-1º Go to directory API, open a command prompt and run the command (start de API):
+1º Go to directory API, open a command prompt and run the commands (start de API):
 
 ```sh
+npm i
+
 node server or
 
 nodemon server
@@ -19,6 +21,8 @@ as you wish ;p
 2º Go to directory SPA, open a new command prompt and run the command (start de SPA):
 
 ```sh
+npm i
+
 node index or
 
 nodemon index
