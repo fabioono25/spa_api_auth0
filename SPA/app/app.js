@@ -12,7 +12,7 @@
     '$urlRouterProvider',
     'angularAuth0Provider'
   ];
-
+ 
   function config(
     $stateProvider,
     $locationProvider,
@@ -36,11 +36,11 @@
 
     // Initialization for the angular-auth0 library
     angularAuth0Provider.init({
-      clientID: AUTH0_CLIENT_ID,
-      domain: AUTH0_DOMAIN,
+      clientID: 'piFsesKSJnermgo6QXMQo5RnoPGbp4r8',
+      domain: 'fabioono25.auth0.com',
       responseType: 'token id_token',
       audience: 'http://api.example.com/customer',
-      redirectUri: AUTH0_CALLBACK_URL,
+      redirectUri: 'http://localhost:3000/callback',
       scope: 'openid'
     });
 
